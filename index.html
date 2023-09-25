@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="" alt="Logo"></a>
+            </div>
+            <nav id="nav" >
+                <ul class="menu">
+                    <li><a href="#inicio"   onclick="seleccionar()">INICIO</a></li>
+                    <li><a  href="#sobremi" onclick="seleccionar('sobremi_marca')">SERVICIOS</a></li>
+                    <li><a  href="#portfolio" onclick="seleccionar()">NOSOTROS</a></li>
+                    <li><a  href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive " onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+    <section id="encabezado">
+        <div class="contenedor_imagenEncabezado">
+            <img src="./assets/images/AG WEB_Mesa de trabajo 1 copia.png" alt="Imagen encabezado">
+            <div class="contenedorTexto-boton_encabezado">
+               
+                <h2>Albanesi Galtieri & Asociados, soluciones jurídicas e impositivas contables.</h2>
+                
+                <button class="boton">Quiero mas informacion</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="contenedor_asesoramiento">
+        <h2>Asesoramiento Legal</h2>
+        
+        <div class="contenedor_items_asesoramiento">
+            <ul>
+                <li class="item_asesoramiento"><strong>Derecho de familia : </strong>divorcios, sucesiones, ﬁliación, alimentos, cumplimiento de
+                    responsabilidad parental y adopción.</li>
+                <li class="item_asesoramiento"><strong>Derecho labora : </strong>desempleo, sueldos mal liquidados e incumplimiento de la ley
+                    contrato de trabajo.</li>
+                <li class="item_asesoramiento"><strong>Derecho de empresario : </strong>realizamos todo tipo de asesoramiento empresarial
+                    confeccionando todo tipo de contratos, registramos marcas comerciales, realizamos
+                    gestión de cobranzas, negociación y asesorías integrales a empresas, tanto
+                    nacionales como extranjeras.</li>
+                <li class="item_asesoramiento"><strong>Derecho civil : </strong>defensa y ejercicio de responsabilidad contractual y extracontractual,
+                    tales como responsabilidad profesional, indemnización por daños, negligencia
+                    médica y responsabilidad de productos tanto nacionales como internacionales,
+                    desalojos, prescripción adquisitiva de dominio.</li>
+                <li class="item_asesoramiento"><strong>Derecho societario: </strong>constitución de sociedades, modiﬁcaciones, cambio de
+                    autoridades, renovaciones de mandatos ante IGJ, rúbrica de libros, aumentos y
+                    disminución de capital, disolución y liquidación.</li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <section id="asesoramiento_contable">
+        <h2>Asesoramiento Impositivo contable</h2>
+        <div class="contenedor_itemContable">
+            <div class="itemContable">
+                <img src="./assets/icons/AG WEB-07.png" alt="">
+                <div>
+                    <h3>IMPOSITIVOS</h3>
+                    <ul>
+                        <li>— Liquidación mensual y anual de impuestos </li>
+                        <li>— Asesoramiento a Monotributistas</li>
+                        <li>— Regímenes de Información y Retención</li>
+                        <li>— Tramitación de inscripciones</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="itemContable">
+                <img src="./assets/icons/AG WEB-08.png" alt="">
+                <div>
+                    <h3>CONTABLES</h3>
+                    <ul>
+                        <li>— Preparación de Estados Contables</li>
+                        <li>— Informes y Certiﬁcaciones contables</li>
+                        <li>— Auditoría de Estados Contables</li>
+                        <li>— Análisis y proyección de Estados Contables</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="itemContable">
+                <img src="./assets/icons/AG WEB-09.png" alt="">
+                <div>
+                    <h3>LIQUIDACIÓN DE SUELDOS</h3>
+                    <ul>
+                        <li>— Liquidación de sueldos y jornales</li>
+                        <li>— DDJJ AFIP (F931) y boletas sindicales</li>
+                        <li>— Altas y bajas de empleados</li>
+                        <li>— Asesoramiento proactivo de los CCT</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="itemContable">
+                <img src="./assets/icons/AG WEB-10.png" alt="">
+                <div>
+                    <h3>SOCIETARIOS</h3>
+                    <ul>
+                        <li>— Encuadre societario para su proyecto</li>
+                        <li>— Constitución de Sociedades</li>
+                        <li>— Modiﬁcaciones al Capital Social</li>
+                        <li>— Transformación de sociedades</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="seccion_Jefes">
+        <div class="contenedorParrafo_Jefes">
+            <p>Nuestro estudio, <strong>con más de 25 años de trayectoria y experiencia</strong>, conjuga eﬁcazmente los conocimientos
+                profesionales del <strong>área jurídica y del área impositivo/contable</strong>, brindando atención personalizada, cuyo ﬁn es
+                <strong>dar soluciones ajustadas a cada uno de los requerimientos de nuestros clientes.</strong></p>
+        </div>
+
+        <div class="contenedor_jefes">
+            <div class="contenedor_Jefe_Individual">
+                <div class="contenedorImagenJefe">
+                    <img src="/assets/images/AG WEB.png" alt="Jefe">
+                </div>
+                <div class="contenedorInfoJefe">
+                    <h3>Daniel</h3>
+                    <p>Lorem ipsum dolor sit
+                        amet, consectetur adipis-
+                        cing elit. Sed non lorem
+                        orci. Aenean sed sem sce-
+                        lerisque, suscipit turpis at,
+                        rutrum felis. Aliquam at</p>
+                </div>
+                
+            </div>
+
+            <div class="contenedor_Jefe_Individual">
+                <div class="contenedorImagenJefe">
+                    <img src="/assets/images/AG WEB.png" alt="Jefe">
+                </div>
+                <div class="contenedorInfoJefe">
+                    <h3>Ricardo</h3>
+                    <p>Lorem ipsum dolor sit
+                        amet, consectetur adipis-
+                        cing elit. Sed non lorem
+                        orci. Aenean sed sem sce-
+                        lerisque, suscipit turpis at,
+                        rutrum felis. Aliquam at</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contacto">
+        <div>
+            <form action="#" class="formulario">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <button>Enviar</button>
+            </form>
+        </div>
+
+        <div>
+            <img src="" alt="Logo">
+            <!-- ACA VA UN MAPA -->
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
