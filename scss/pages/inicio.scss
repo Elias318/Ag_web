@@ -1,40 +1,92 @@
 @import "../utilities/mixins.scss";
-#asesoramiento_contable{
+#encabezado{
     h2{
+        
+        color: #faeafd;
+    }
+}
+#contenedor_asesoramiento{
+    width: 100%;
+    background-color: #faeafd;
+    color: #555454 ;
+    h2{
+        color: #582661 ;
         font-size: 30px;
-        margin: 80px 10px;
+        
+        padding-bottom: 30px;
+        margin-left: 20px
+    }
+    .contenedor_items_asesoramiento{
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        .item_asesoramiento{
+            list-style: none;
+            
+        }
+        
+    }
+    
+    
+}
+
+
+#asesoramiento_contable{
+    background-color: #89688f ;
+    
+    h2{
+        color: #582661;
+       
+        padding-bottom:  50px;
     }
     .contenedor_itemContable{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 30px;
-        .itemContable{
+        
+
+        .col_itemContable{
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
-            width: 500px;
-            img{
-                width: 7rem;
-            }
-            ul{
-                list-style: none;
-                li{
-                    font-size: 20px;
+            width: 50%;
+           
+            .itemContable{
+                display: flex;
+                
+                width: 100%;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h3{
+                        color:#582661;
+                    }
+                    ul{
+                        color: whitesmoke;
+                        list-style: none;
+                    }  
                 }
+                 
             }
         }
+        
     }
 }
 
 #seccion_Jefes{
+    background-color: whitesmoke;
+    color: #085f85;
     width: 100%;
     display: flex;
     flex-direction: column;
     .contenedorParrafo_Jefes{
         
         p{
-            padding: 60px 40px ;
+            color: #085f85;
             text-align: center;
         }
         
@@ -42,14 +94,16 @@
     }
 
     .contenedor_jefes{
+      
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         text-align: center;
+        padding-bottom: 80px;
         
        .contenedor_Jefe_Individual{
             margin: 20px;
-            width: 300px;
+           
             display: flex;
             flex-direction: column;
             
@@ -58,8 +112,19 @@
                
                 
                 img{
+                   
                     box-shadow: 21px 20px 0px 0px rgba(59,121,163,1);
-                    width: 15rem;
+                    
+                }
+            }
+            .contenedorInfoJefe{
+              
+                text-align: center;
+                h3{
+                    color: #582661;
+                }
+                p{
+                    color: #085f85;
                 }
             }
 
@@ -67,6 +132,54 @@
         }
     }
 }
+
+#contacto{
+    width: 100%;
+    background-color: #582661;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .contenedor_formulario{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       
+        form{
+            display: flex;
+            flex-direction: column;  
+            justify-content: center;
+            align-items: center;
+            
+            gap: 20px;  
+            button{
+                @include botonFormulario;
+                
+               
+                
+            }
+        }
+    }
+
+    .contenedor_logoYMapa{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        img{
+            width: 10rem;
+        }
+        
+    }
+}
+
+
+/************************************************************************/
+                                /*MOBILE*/
+/************************************************************************/
 @media only screen and (max-width:980px){
     .contenedor_imagenEncabezado{
         max-width: 100%;
@@ -86,12 +199,12 @@
             z-index: 999;
             h2{
                 display: block;
-                font-size: 20px;
+                font-size: 25px;
                 color: white;
                 margin-bottom: 40px;
             }
             .boton{
-                @include boton;
+                @include botonEncabezado;
                 font-size: 12px;
                 
             }
@@ -100,9 +213,12 @@
 
     //Seccion Asesoramiento
     #contenedor_asesoramiento{
+        padding-bottom: 40px;
         h2{
             font-size: 30px;
-            margin: 20px 10px;
+            padding-top: 80px;
+            padding-bottom: 30px;
+            margin-left: 20px
         }
         .contenedor_items_asesoramiento{
             font-size: 20px;
@@ -118,42 +234,305 @@
         
         
     }
-        
-}
-@media only screen and (min-width:981px){
-#encabezado{
-    
-    .contenedor_imagenEncabezado{
-      
-        max-width: 100%;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-        img{
+
+    //Seccion Asesoramiento Contable
+
+    #asesoramiento_contable{
+        padding-bottom: 40px;
+        h2{
+            font-size: 30px;
+         
+        }
+        .contenedor_itemContable{
             width: 100%;
+            gap: 50px;
+    
+            .col_itemContable{
+                width: 80%;
+             gap: 50px;
+                .itemContable{
+                  display: flex;
+                  justify-content: center;
+                    img{
+                        
+                        height: 8rem;
+                    }
+                    h3{
+                        font-size: 20px;
+                    }
+
+                    ul{
+                        li{
+                            margin-bottom: 8px;
+                            font-size: 20px;
+                        }
+                    }
+                       
+                }
+            }
+            
+        }
+    }
+
+
+    //Seccion Jefe
+
+    .contenedorParrafo_Jefes{
+        
+        p{
+            padding: 40px 50px ;
+            font-size: 22px;
+            
            
         }
-        .contenedorTexto-boton_encabezado{
-            width: 50%;
-            margin: 80px;
-            position: absolute;
-            z-index: 999;
-            h2{
-                font-size: 30px;
-                color: white;
-                margin-bottom: 40px;
+        
+        
+    }
+
+    .contenedor_Jefe_Individual{
+        img{
+            height: 15rem;
+        }
+        
+        .contenedorInfoJefe{
+            h3{
+                font-size: 25px;
             }
-            .boton{
-                @include boton;
-                font-size: 27px;
+            p{
+                width: 250px;
+                font-size: 20px;
+            }
+        }
+
+        
+    }
+    //SECCION CONTACTO
+
+    #contacto{
+        
+        
+        .contenedor_formulario{
+            padding: 50px 0;
+           width: 100%;
+           
+            form{
+                     width: 80%;   
+                    input{
+                       width: 400px;
+                        font-size: 20px;
+                        padding: 10px 30px;
+                    
+                    }
+                
                
+                button{
+                    font-size: 20px;
+    
+                }
+                &::placeholder{
+                    
+                    
+                    padding: 10px 20px;
+                }
+            }
+        }
+    
+        .contenedor_logoYMapa{
+           width: 100%;
+           img{
+            padding: 20px 0;
+           }
+            
+            iframe{
+                padding: 0 40px;
+                width: 100%;
             }
         }
     }
-    
+        
 }
+
+
+
+/************************************************************************/
+                                /*DESKTOP*/
+/************************************************************************/
+@media only screen and (min-width:981px){
+    #encabezado{
+        
+        .contenedor_imagenEncabezado{
+        
+            max-width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            img{
+                width: 100%;
+            
+            }
+            .contenedorTexto-boton_encabezado{
+                width: 30%;
+                margin: 80px;
+                position: absolute;
+                z-index: 999;
+                h2{
+                    font-size: 35px;
+                    
+                    margin-bottom: 40px;
+                }
+                .boton{
+                    @include botonEncabezado;
+                    font-size: 27px;
+                
+                }
+            }
+        }
+        
+    }
+
+    
+
+    //SECCION ASESORAMIENTO
+    #contenedor_asesoramiento{
+       padding: 80px 0 ;
+        h2{
+            font-size: 50px;
+            
+        }
+        .contenedor_items_asesoramiento{
+            font-size: 30px;
+           
+            padding: 0 20px;
+            .item_asesoramiento{
+                
+                list-style: none;
+                margin-bottom: 60px;
+            }
+            
+        }
+        
+        
+    }
+
+
+    //Seccion Asesoramiento Contable
+
+    #asesoramiento_contable{
+        padding: 80px 0;
+        h2{
+            font-size: 50px;
+            
+        }
+        .contenedor_itemContable{
+           
+    
+            .col_itemContable{
+                gap: 80px;
+                .itemContable{
+                  display: flex;
+                  justify-content: center;
+                    img{
+                        
+                        height: 15rem;
+                    }
+                    h3{
+                        font-size: 35px;
+                    }
+
+                    ul{
+                        li{
+                            margin-bottom: 8px;
+                            font-size: 25px;
+                        }
+                    }
+                       
+                }
+            }
+            
+        }
+    }
+
+    //Seccion Jefe
+
+    .contenedorParrafo_Jefes{
+        
+        p{
+            padding: 100px 30px ;
+            
+            font-size: 35px;
+            
+           
+        }
+        
+        
+    }
+
+    .contenedor_Jefe_Individual{
+        
+        img{
+            height: 20rem;
+        }
+        .contenedorInfoJefe{
+            h3{
+                font-size: 35px;
+            }
+            p{
+                width: 500px;
+                font-size: 30px;
+            }
+        }
+
+        
+    }
+
+
+    //SECCION CONTACTO
+
+     #contacto{
+        padding: 80px 0;
+        
+        .contenedor_formulario{
+          
+           
+           
+            form{
+                    width: 90%;   
+                    input{
+                       width: 500px;
+                       height: 70px;
+                        font-size: 20px;
+                        padding: 10px 30px;
+                    
+                    }
+                
+               
+                button{
+                    font-size: 30px;
+    
+                }
+                &::placeholder{
+                    
+                    
+                    padding: 10px 20px;
+                }
+            }
+        }
+    
+        .contenedor_logoYMapa{
+           width: 50%;
+            img{
+                padding: 30px 0;
+            }
+            iframe{
+                padding: 0 20px;
+                width: 100%; 
+            }
+           
+            
+        }
+    }
 }
 
 

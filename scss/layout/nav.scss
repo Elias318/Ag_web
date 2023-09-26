@@ -1,5 +1,5 @@
 .contenedor-header{
-    background: #1e2326;
+    background: #582661;
     
     width: 100%;
    
@@ -35,7 +35,7 @@
                     transition: .5s;
                     text-decoration: none;
                     &:hover{
-                        color: #1CB698;  
+                        color: #faeafd;  
                     }
                 }
                 
@@ -43,7 +43,7 @@
         }
        
         .nav-responsive{
-           background-color: #1CB698;
+           background-color: #582661;
            color:#fff;
            padding: 5px 10px;
            border-radius: 5px;
@@ -74,8 +74,9 @@
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #252A2E;
+        background-color: #582661;
         width: 180px;
+        z-index: 999;
         ul{
             display: block !important;
             li{

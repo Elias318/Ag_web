@@ -1,3 +1,6 @@
+
+<!-- COPIAR JS PARA EL NAV -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,20 +9,24 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#"><img src="" alt="Logo"></a>
+                <a href="#"><img src="/assets/images/Logo.png" alt="Logo"></a>
             </div>
             <nav id="nav" >
                 <ul class="menu">
-                    <li><a href="#inicio"   onclick="seleccionar()">INICIO</a></li>
-                    <li><a  href="#sobremi" onclick="seleccionar('sobremi_marca')">SERVICIOS</a></li>
-                    <li><a  href="#portfolio" onclick="seleccionar()">NOSOTROS</a></li>
-                    <li><a  href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#"   onclick="seleccionar()">INICIO</a></li>
+                    <li><a  href="#" onclick="seleccionar('sobremi_marca')">SERVICIOS</a></li>
+                    <li><a  href="#" onclick="seleccionar()">NOSOTROS</a></li>
+                    <li><a  href="#" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive " onclick="mostrarOcultarMenu()">
@@ -34,7 +41,7 @@
             <img src="./assets/images/AG WEB_Mesa de trabajo 1 copia.png" alt="Imagen encabezado">
             <div class="contenedorTexto-boton_encabezado">
                
-                <h2>Albanesi Galtieri & Asociados, soluciones jurídicas e impositivas contables.</h2>
+                <h2>Elias Olivencia & Asociados, soluciones jurídicas e impositivas contables.</h2>
                 
                 <button class="boton">Quiero mas informacion</button>
             </div>
@@ -71,52 +78,58 @@
     <section id="asesoramiento_contable">
         <h2>Asesoramiento Impositivo contable</h2>
         <div class="contenedor_itemContable">
-            <div class="itemContable">
-                <img src="./assets/icons/AG WEB-07.png" alt="">
-                <div>
-                    <h3>IMPOSITIVOS</h3>
-                    <ul>
-                        <li>— Liquidación mensual y anual de impuestos </li>
-                        <li>— Asesoramiento a Monotributistas</li>
-                        <li>— Regímenes de Información y Retención</li>
-                        <li>— Tramitación de inscripciones</li>
-                    </ul>
+            <div class="col_itemContable">
+                <div class="itemContable">
+                    <img src="./assets/icons/AG WEB-07.png" alt="">
+                    <div>
+                        <h3>IMPOSITIVOS</h3>
+                        <ul>
+                            <li>— Liquidación mensual y anual de impuestos </li>
+                            <li>— Asesoramiento a Monotributistas</li>
+                            <li>— Regímenes de Información y Retención</li>
+                            <li>— Tramitación de inscripciones</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="itemContable">
-                <img src="./assets/icons/AG WEB-08.png" alt="">
-                <div>
-                    <h3>CONTABLES</h3>
-                    <ul>
-                        <li>— Preparación de Estados Contables</li>
-                        <li>— Informes y Certiﬁcaciones contables</li>
-                        <li>— Auditoría de Estados Contables</li>
-                        <li>— Análisis y proyección de Estados Contables</li>
-                    </ul>
+                <div class="itemContable">
+                    <img src="./assets/icons/AG WEB-08.png" alt="">
+                    <div>
+                        <h3>CONTABLES</h3>
+                        <ul>
+                            <li>— Preparación de Estados Contables</li>
+                            <li>— Informes y Certiﬁcaciones contables</li>
+                            <li>— Auditoría de Estados Contables</li>
+                            <li>— Análisis y proyección de Estados Contables</li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
-            <div class="itemContable">
-                <img src="./assets/icons/AG WEB-09.png" alt="">
-                <div>
-                    <h3>LIQUIDACIÓN DE SUELDOS</h3>
-                    <ul>
-                        <li>— Liquidación de sueldos y jornales</li>
-                        <li>— DDJJ AFIP (F931) y boletas sindicales</li>
-                        <li>— Altas y bajas de empleados</li>
-                        <li>— Asesoramiento proactivo de los CCT</li>
-                    </ul>
+            
+            <div class="col_itemContable">
+                <div class="itemContable">
+                    <img src="./assets/icons/AG WEB-09.png" alt="">
+                    <div>
+                        <h3>LIQUIDACIÓN DE SUELDOS</h3>
+                        <ul>
+                            <li>— Liquidación de sueldos y jornales</li>
+                            <li>— DDJJ AFIP (F931) y boletas sindicales</li>
+                            <li>— Altas y bajas de empleados</li>
+                            <li>— Asesoramiento proactivo de los CCT</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="itemContable">
-                <img src="./assets/icons/AG WEB-10.png" alt="">
-                <div>
-                    <h3>SOCIETARIOS</h3>
-                    <ul>
-                        <li>— Encuadre societario para su proyecto</li>
-                        <li>— Constitución de Sociedades</li>
-                        <li>— Modiﬁcaciones al Capital Social</li>
-                        <li>— Transformación de sociedades</li>
-                    </ul>
+                <div class="itemContable">
+                    <img src="./assets/icons/AG WEB-10.png" alt="">
+                    <div>
+                        <h3>SOCIETARIOS</h3>
+                        <ul>
+                            <li>— Encuadre societario para su proyecto</li>
+                            <li>— Constitución de Sociedades</li>
+                            <li>— Modiﬁcaciones al Capital Social</li>
+                            <li>— Transformación de sociedades</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -149,7 +162,7 @@
 
             <div class="contenedor_Jefe_Individual">
                 <div class="contenedorImagenJefe">
-                    <img src="/assets/images/AG WEB.png" alt="Jefe">
+                    <img src="/assets/images/Captura de pantalla 2023-09-25 222619.png" alt="Jefe">
                 </div>
                 <div class="contenedorInfoJefe">
                     <h3>Ricardo</h3>
@@ -168,24 +181,34 @@
     </section>
 
     <section id="contacto">
-        <div>
-            <form action="#" class="formulario">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
+        <div class="contenedor_formulario">
+            <form action="#" >
+                <input type="text" placeholder="Nombre y apelldio">
+                <input type="email"placeholder="Correo Electronico">
+                <input type="number" placeholder="Telefono">
+                <input type="text" placeholder="Consulta(Opcional)">
                 <button>Enviar</button>
             </form>
         </div>
 
-        <div>
-            <img src="" alt="Logo">
-            <!-- ACA VA UN MAPA -->
+        <div class="contenedor_logoYMapa">
+            <img src="/assets/images/Logo.png" alt="Logo">
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2370204650497!2d-58.53984872338722!3d-34.57286875587103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb771f80a1c0f%3A0x9f1aa97ccaa0c617!2sCochabamba%202279%2C%20San%20Mart%C3%ADn%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1695650294250!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
     <footer>
-        
+        <div class="contenedor_info_footer">
+            <ul>
+                <li class="items_footer">Mail: info@asdassad.com.ar </li>
+                <li class="items_footer">Dirección: asdsadsadsadsadsadsadsadad</li>
+                <li class="items_footer">Teléfono: +11111111111</li>
+                <li class="items_footer">WhatsApp: +1111111111111111</li>
+                <li class="items_footer">Instagram: https://www.instagram.com/aaasdsadsad/</li>
+            </ul>
+        </div>
     </footer>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>

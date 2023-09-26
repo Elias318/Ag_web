@@ -3,8 +3,11 @@
   margin: 0;
   box-sizing: border-box; }
 
+html {
+  font-family: 'Noto Serif NP Hmong', serif; }
+
 .contenedor-header {
-  background: #1e2326;
+  background: #582661;
   width: 100%;
   z-index: 99; }
   .contenedor-header .selected {
@@ -33,9 +36,9 @@
         transition: .5s;
         text-decoration: none; }
         .contenedor-header header ul li a:hover {
-          color: #1CB698; }
+          color: #faeafd; }
     .contenedor-header header .nav-responsive {
-      background-color: #1CB698;
+      background-color: #582661;
       color: #fff;
       padding: 5px 10px;
       border-radius: 5px;
@@ -56,8 +59,9 @@
     position: absolute;
     right: 0;
     top: 75px;
-    background-color: #252A2E;
-    width: 180px; }
+    background-color: #582661;
+    width: 180px;
+    z-index: 999; }
     .responsive ul {
       display: block !important; }
       .responsive ul li {
@@ -66,50 +70,122 @@
   .nav-responsive {
     display: block !important; } }
 
-#asesoramiento_contable h2 {
-  font-size: 30px;
-  margin: 80px 10px; }
+#encabezado h2 {
+  color: #faeafd; }
 
-#asesoramiento_contable .contenedor_itemContable {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px; }
-  #asesoramiento_contable .contenedor_itemContable .itemContable {
+#contenedor_asesoramiento {
+  width: 100%;
+  background-color: #faeafd;
+  color: #555454; }
+  #contenedor_asesoramiento h2 {
+    color: #582661;
+    font-size: 30px;
+    padding-bottom: 30px;
+    margin-left: 20px; }
+  #contenedor_asesoramiento .contenedor_items_asesoramiento {
+    font-size: 25px;
     display: flex;
-    align-items: center;
-    width: 500px; }
-    #asesoramiento_contable .contenedor_itemContable .itemContable img {
-      width: 7rem; }
-    #asesoramiento_contable .contenedor_itemContable .itemContable ul {
+    flex-direction: column;
+    padding: 0 20px; }
+    #contenedor_asesoramiento .contenedor_items_asesoramiento .item_asesoramiento {
       list-style: none; }
-      #asesoramiento_contable .contenedor_itemContable .itemContable ul li {
-        font-size: 20px; }
+
+#asesoramiento_contable {
+  background-color: #89688f; }
+  #asesoramiento_contable h2 {
+    color: #582661;
+    padding-bottom: 50px; }
+  #asesoramiento_contable .contenedor_itemContable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    #asesoramiento_contable .contenedor_itemContable .col_itemContable {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 50%; }
+      #asesoramiento_contable .contenedor_itemContable .col_itemContable .itemContable {
+        display: flex;
+        width: 100%; }
+        #asesoramiento_contable .contenedor_itemContable .col_itemContable .itemContable div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          #asesoramiento_contable .contenedor_itemContable .col_itemContable .itemContable div h3 {
+            color: #582661; }
+          #asesoramiento_contable .contenedor_itemContable .col_itemContable .itemContable div ul {
+            color: whitesmoke;
+            list-style: none; }
 
 #seccion_Jefes {
+  background-color: whitesmoke;
+  color: #085f85;
   width: 100%;
   display: flex;
   flex-direction: column; }
   #seccion_Jefes .contenedorParrafo_Jefes p {
-    padding: 60px 40px;
+    color: #085f85;
     text-align: center; }
   #seccion_Jefes .contenedor_jefes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 80px; }
     #seccion_Jefes .contenedor_jefes .contenedor_Jefe_Individual {
       margin: 20px;
-      width: 300px;
       display: flex;
       flex-direction: column; }
       #seccion_Jefes .contenedor_jefes .contenedor_Jefe_Individual .contenedorImagenJefe {
         margin: 30px 0; }
         #seccion_Jefes .contenedor_jefes .contenedor_Jefe_Individual .contenedorImagenJefe img {
-          box-shadow: 21px 20px 0px 0px #3b79a3;
-          width: 15rem; }
+          box-shadow: 21px 20px 0px 0px #3b79a3; }
+      #seccion_Jefes .contenedor_jefes .contenedor_Jefe_Individual .contenedorInfoJefe {
+        text-align: center; }
+        #seccion_Jefes .contenedor_jefes .contenedor_Jefe_Individual .contenedorInfoJefe h3 {
+          color: #582661; }
+        #seccion_Jefes .contenedor_jefes .contenedor_Jefe_Individual .contenedorInfoJefe p {
+          color: #085f85; }
 
+#contacto {
+  width: 100%;
+  background-color: #582661;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  #contacto .contenedor_formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #contacto .contenedor_formulario form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; }
+      #contacto .contenedor_formulario form button {
+        padding: 10px 30px;
+        background-color: #89688f;
+        color: white;
+        border: solid 2px white;
+        border-radius: 10px;
+        transition: .5s; }
+        #contacto .contenedor_formulario form button:hover {
+          background-color: #582661; }
+  #contacto .contenedor_logoYMapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; }
+    #contacto .contenedor_logoYMapa img {
+      width: 10rem; }
+
+/************************************************************************/
+/*MOBILE*/
+/************************************************************************/
 @media only screen and (max-width: 980px) {
   .contenedor_imagenEncabezado {
     max-width: 100%;
@@ -127,28 +203,87 @@
       z-index: 999; }
       .contenedor_imagenEncabezado .contenedorTexto-boton_encabezado h2 {
         display: block;
-        font-size: 20px;
+        font-size: 25px;
         color: white;
         margin-bottom: 40px; }
       .contenedor_imagenEncabezado .contenedorTexto-boton_encabezado .boton {
         padding: 10px 20px;
-        background-color: blueviolet;
+        background-color: #89688f;
         border: solid 2px white;
         border-radius: 10px;
         color: white;
         font-size: 12px; }
-  #contenedor_asesoramiento h2 {
-    font-size: 30px;
-    margin: 20px 10px; }
-  #contenedor_asesoramiento .contenedor_items_asesoramiento {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px; }
-    #contenedor_asesoramiento .contenedor_items_asesoramiento .item_asesoramiento {
-      list-style: none;
-      margin-bottom: 30px; } }
+        .contenedor_imagenEncabezado .contenedorTexto-boton_encabezado .boton:hover {
+          background-color: #582661; }
+  #contenedor_asesoramiento {
+    padding-bottom: 40px; }
+    #contenedor_asesoramiento h2 {
+      font-size: 30px;
+      padding-top: 80px;
+      padding-bottom: 30px;
+      margin-left: 20px; }
+    #contenedor_asesoramiento .contenedor_items_asesoramiento {
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px; }
+      #contenedor_asesoramiento .contenedor_items_asesoramiento .item_asesoramiento {
+        list-style: none;
+        margin-bottom: 30px; }
+  #asesoramiento_contable {
+    padding-bottom: 40px; }
+    #asesoramiento_contable h2 {
+      font-size: 30px; }
+    #asesoramiento_contable .contenedor_itemContable {
+      width: 100%;
+      gap: 50px; }
+      #asesoramiento_contable .contenedor_itemContable .col_itemContable {
+        width: 80%;
+        gap: 50px; }
+        #asesoramiento_contable .contenedor_itemContable .col_itemContable .itemContable {
+          display: flex;
+          justify-content: center; }
+          #asesoramiento_contable .contenedor_itemContable .col_itemContable .itemContable img {
+            height: 8rem; }
+          #asesoramiento_contable .contenedor_itemContable .col_itemContable .itemContable h3 {
+            font-size: 20px; }
+          #asesoramiento_contable .contenedor_itemContable .col_itemContable .itemContable ul li {
+            margin-bottom: 8px;
+            font-size: 20px; }
+  .contenedorParrafo_Jefes p {
+    padding: 40px 50px;
+    font-size: 22px; }
+  .contenedor_Jefe_Individual img {
+    height: 15rem; }
+  .contenedor_Jefe_Individual .contenedorInfoJefe h3 {
+    font-size: 25px; }
+  .contenedor_Jefe_Individual .contenedorInfoJefe p {
+    width: 250px;
+    font-size: 20px; }
+  #contacto .contenedor_formulario {
+    padding: 50px 0;
+    width: 100%; }
+    #contacto .contenedor_formulario form {
+      width: 80%; }
+      #contacto .contenedor_formulario form input {
+        width: 400px;
+        font-size: 20px;
+        padding: 10px 30px; }
+      #contacto .contenedor_formulario form button {
+        font-size: 20px; }
+      #contacto .contenedor_formulario form::placeholder {
+        padding: 10px 20px; }
+  #contacto .contenedor_logoYMapa {
+    width: 100%; }
+    #contacto .contenedor_logoYMapa img {
+      padding: 20px 0; }
+    #contacto .contenedor_logoYMapa iframe {
+      padding: 0 40px;
+      width: 100%; } }
 
+/************************************************************************/
+/*DESKTOP*/
+/************************************************************************/
 @media only screen and (min-width: 981px) {
   #encabezado .contenedor_imagenEncabezado {
     max-width: 100%;
@@ -160,18 +295,104 @@
     #encabezado .contenedor_imagenEncabezado img {
       width: 100%; }
     #encabezado .contenedor_imagenEncabezado .contenedorTexto-boton_encabezado {
-      width: 50%;
+      width: 30%;
       margin: 80px;
       position: absolute;
       z-index: 999; }
       #encabezado .contenedor_imagenEncabezado .contenedorTexto-boton_encabezado h2 {
-        font-size: 30px;
-        color: white;
+        font-size: 35px;
         margin-bottom: 40px; }
       #encabezado .contenedor_imagenEncabezado .contenedorTexto-boton_encabezado .boton {
         padding: 10px 20px;
-        background-color: blueviolet;
+        background-color: #89688f;
         border: solid 2px white;
         border-radius: 10px;
         color: white;
-        font-size: 27px; } }
+        font-size: 27px; }
+        #encabezado .contenedor_imagenEncabezado .contenedorTexto-boton_encabezado .boton:hover {
+          background-color: #582661; }
+  #contenedor_asesoramiento {
+    padding: 80px 0; }
+    #contenedor_asesoramiento h2 {
+      font-size: 50px; }
+    #contenedor_asesoramiento .contenedor_items_asesoramiento {
+      font-size: 30px;
+      padding: 0 20px; }
+      #contenedor_asesoramiento .contenedor_items_asesoramiento .item_asesoramiento {
+        list-style: none;
+        margin-bottom: 60px; }
+  #asesoramiento_contable {
+    padding: 80px 0; }
+    #asesoramiento_contable h2 {
+      font-size: 50px; }
+    #asesoramiento_contable .contenedor_itemContable .col_itemContable {
+      gap: 80px; }
+      #asesoramiento_contable .contenedor_itemContable .col_itemContable .itemContable {
+        display: flex;
+        justify-content: center; }
+        #asesoramiento_contable .contenedor_itemContable .col_itemContable .itemContable img {
+          height: 15rem; }
+        #asesoramiento_contable .contenedor_itemContable .col_itemContable .itemContable h3 {
+          font-size: 35px; }
+        #asesoramiento_contable .contenedor_itemContable .col_itemContable .itemContable ul li {
+          margin-bottom: 8px;
+          font-size: 25px; }
+  .contenedorParrafo_Jefes p {
+    padding: 100px 30px;
+    font-size: 35px; }
+  .contenedor_Jefe_Individual img {
+    height: 20rem; }
+  .contenedor_Jefe_Individual .contenedorInfoJefe h3 {
+    font-size: 35px; }
+  .contenedor_Jefe_Individual .contenedorInfoJefe p {
+    width: 500px;
+    font-size: 30px; }
+  #contacto {
+    padding: 80px 0; }
+    #contacto .contenedor_formulario form {
+      width: 90%; }
+      #contacto .contenedor_formulario form input {
+        width: 500px;
+        height: 70px;
+        font-size: 20px;
+        padding: 10px 30px; }
+      #contacto .contenedor_formulario form button {
+        font-size: 30px; }
+      #contacto .contenedor_formulario form::placeholder {
+        padding: 10px 20px; }
+    #contacto .contenedor_logoYMapa {
+      width: 50%; }
+      #contacto .contenedor_logoYMapa img {
+        padding: 30px 0; }
+      #contacto .contenedor_logoYMapa iframe {
+        padding: 0 20px;
+        width: 100%; } }
+
+footer {
+  background-color: #582661;
+  color: whitesmoke;
+  width: 100%; }
+  footer .contenedor_info_footer {
+    padding: 80px 20px; }
+    footer .contenedor_info_footer ul {
+      list-style: none; }
+      footer .contenedor_info_footer ul li {
+        margin-bottom: 15px; }
+
+@media only screen and (max-width: 980px) {
+  .contenedor_info_footer {
+    display: flex;
+    justify-content: center; }
+    .contenedor_info_footer ul {
+      list-style: none; }
+      .contenedor_info_footer ul li {
+        font-size: 15px; } }
+
+@media only screen and (min-width: 981px) {
+  .contenedor_info_footer {
+    display: flex;
+    justify-content: start; }
+    .contenedor_info_footer ul {
+      list-style: none; }
+      .contenedor_info_footer ul li {
+        font-size: 25px; } }
