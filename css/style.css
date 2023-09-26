@@ -212,6 +212,9 @@ html {
         border: solid 2px white;
         border-radius: 10px;
         color: white;
+        box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
         font-size: 12px; }
         .contenedor_imagenEncabezado .contenedorTexto-boton_encabezado .boton:hover {
           background-color: #582661; }
@@ -308,6 +311,9 @@ html {
         border: solid 2px white;
         border-radius: 10px;
         color: white;
+        box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75);
         font-size: 27px; }
         #encabezado .contenedor_imagenEncabezado .contenedorTexto-boton_encabezado .boton:hover {
           background-color: #582661; }
